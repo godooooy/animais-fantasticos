@@ -28,7 +28,7 @@ export default function fetchAnimais(url, target) {
   async function criarAnimais() {
     try {
       // Fetch, espera a resposta e transforma em json
-      const animaisResponse = await fetch(url)
+      const animaisResponse = await fetch(url);
       const animaisJson = await animaisResponse.json();
       // Após a transformação de json, ativa as funções
       // para preencher e animar os números
